@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.github.samueltbrown:gradle-cucumber-plugin:0.8"
+
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+apply plugin: "com.github.samueltbrown.cucumber"
+apply plugin: 'java'
+apply plugin: "idea"
+apply plugin: "eclipse"
+
+dependencies {
+    testCompile "info.cukes:cucumber-java:1.2.2"
+
+    cucumberRuntime sourceSets.test.output
+}
+
+project.tasks.cucumber.dependsOn build
+
+cucumber {
+    formats = ['pretty','json:build/report/cucumber.json','junit:build/report/cucumber.xml','html:build/report/cucumber/']
+    featureDirs = ['src/test/features']
+}
