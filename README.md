@@ -1,6 +1,6 @@
 # Instructions
 This repository contains the skeleton of a Cucumber test suite that inludes a gradle build and a single feature file. 
-**Please submit a pull request that adds Glue Code and additional implmentations to satisfy the test scenarios in the 
+**Please submit a pull request that adds Glue Code and additional implementations to satisfy the test scenarios in the 
 feature file.**
 
 # About This Repository
