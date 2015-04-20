@@ -1,4 +1,4 @@
-Feature: Goggle Top Search Results
+Feature: Google Top Search Results
 
   Certain major web brands should rank high in google search results for their trademarked terms.
 
